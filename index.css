@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  font-family: "Inter", sans-serif;
+}
+.unit-converter {
+  width: 400px;
+  height: auto;
+  background-color: #1f2937;
+  color: #fff;
+  margin: 50px auto;
+  box-shadow: rgb(31 41 55 / 55%) 0px 7px 29px 0px;
+  border-radius: 20px;
+  transition: 300ms all ease-in-out;
+  max-width: 90%;
+}
+.unit-converter__top {
+  padding: 30px 20px;
+  text-align: center;
+  background: linear-gradient(246.26deg, #ed4683 0%, #f48e14 100%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.unit-converter__top h2 {
+  font-size: 20px;
+}
+.unit-converter__top #input {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 60px;
+  font-weight: 800;
+}
+.unit-converter__top #input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.unit-converter__top #input:focus::placeholder {
+  opacity: 0;
+}
+.unit-converter__bottom {
+  padding: 30px 20px;
+  text-align: center;
+  transition: 300ms all ease-in-out;
+}
+.converter-bottom__section {
+  padding: 10px;
+}
+.converter-bottom__section h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.converter-bottom__section h4 {
+  font-weight: 300;
+  font-size: 14px;
+  color: #d2d2d2;
+  padding: 10px 0px;
+}
+.onoff-switch-container {
+  width: 45px;
+  height: 20px;
+  background: #1f2937;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  border-radius: 20px;
+  box-shadow: rgb(255 255 255 / 25%) 0px 2px 5px -1px,
+    rgb(255 255 255 / 30%) 0px 1px 3px -1px;
+  transition: 300ms all ease-in-out;
+}
+.onoff-switch {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#onoffswitch {
+  position: relative;
+  display: inline-block;
+  width: 45%;
+  height: 100%;
+  border-radius: 50%;
+  appearance: none;
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  background: #ffd43b;
+  transition: 300ms all ease-in-out;
+}
+.fa-moon {
+  color: #183153;
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  font-size: 14px;
+  visibility: hidden;
+  display: inline-block;
+}
+.fa-sun {
+  color: #ffd43b;
+  top: 3px;
+  position: absolute;
+  right: 5px;
+  font-size: 14px;
+  display: inline-block;
+}

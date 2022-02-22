@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <div class="onoff-switch-container">
+      <div class="onoff-switch">
+        <input
+          type="checkbox"
+          name="onoffswitch"
+          id="onoffswitch"
+          checked="unchecked"
+          title="Enable night mode"
+          value="0"
+        />
+        <label for="onoffswitch"><span style="display: none">ON</span></label>
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+      </div>
+    </div>
+    <div class="unit-converter">
+      <div class="unit-converter__top">
+        <h2>Metric/Imperial unit conversion</h2>
+        <label for="input"><span style="display: none">Input</span></label>
+        <input type="text" name="input" id="input" placeholder="0" />
+      </div>
+      <div class="unit-converter__bottom">
+        <div class="converter-bottom__section length">
+          <h3>Length (Meter/Feet)</h3>
+          <h4>0 meters = 0 feet | 0 feet = 0 meters</h4>
+        </div>
+        <div class="converter-bottom__section volume">
+          <h3>Volume (Liters/Gallons)</h3>
+          <h4>0 liters = 0 gallons | 0 gallons = 0 liters</h4>
+        </div>
+        <div class="converter-bottom__section mass">
+          <h3>Mass (Kilograms/Pounds)</h3>
+          <h4>0 kilos = 0 pounds | 0 pounds = 0 kilos</h4>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
